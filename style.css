@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 137, 201);
+}
+#board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+h1 {
+    color: white;
+}
+
+.cell {
+    color: white;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#grid-box-0,
+#grid-box-1,
+#grid-box-3,
+#grid-box-4 {
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+  
+}
+#grid-box-2,
+#grid-box-5 {
+    border-bottom: 10px solid black;
+}
+#grid-box-6,
+#grid-box-7 {
+    border-right: 10px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+.playerX {
+
+}
+.playerO {
+
+}
+
+
+#restartBtn {
+    margin: 30px;
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    font-size: 1em;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+}
