@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(253, 137, 201);
+    font-family: 'Courgette', cursive;
 }
 #board {
     display: grid;
@@ -12,6 +15,14 @@ body {
 
 h1 {
     color: white;
+    
+}
+
+#playerName {
+    display: flex;
+    display: row;
+    margin: 30px;
+    padding: 5px 10px 5px 10px;
 }
 
 .cell {
@@ -40,17 +51,10 @@ h1 {
     border-right: 10px solid black;
 }
 
-.hide {
-    display: none;
+.gameStatus {
+    color: white;
+    max-width: 50vw;
 }
-
-.playerX {
-
-}
-.playerO {
-
-}
-
 
 #restartBtn {
     margin: 30px;
@@ -60,4 +64,5 @@ h1 {
     border-color: white;
     border-radius: 10px;
     color: white;
+   
 }
